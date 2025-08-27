@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app_new/constants/colors.dart';
 import 'package:notes_app_new/constants/texts.dart';
+import 'package:notes_app_new/widgets/custom_floating_action_button.dart';
 import 'package:notes_app_new/widgets/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
@@ -7,6 +9,10 @@ class NotesView extends StatelessWidget {
   static final notesViewRouteID = kNotesViewRouteID;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(), body: NotesViewBody());
+    return Scaffold(
+      appBar: AppBar(),
+      body: NotesViewBody(),
+      floatingActionButton: CustomFloatingActionButton(),
+    );
   }
 }

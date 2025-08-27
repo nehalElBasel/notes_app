@@ -13,15 +13,15 @@ class NotesListViewCard extends StatelessWidget {
     print(Colors.red.value);
     return Card(
       color: Color(note.color),
-
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           ListTile(
             titleTextStyle: kListTileTitleStyle,
+            subtitleTextStyle: kListTileDescribtionStyle,
             contentPadding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
             title: Padding(
-              padding: const EdgeInsets.only(bottom: 20),
+              padding: const EdgeInsets.only(bottom: 10),
               child: Text(note.title),
             ),
             subtitle: Text(note.describtion),
@@ -32,7 +32,7 @@ class NotesListViewCard extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 35, bottom: 20),
-            child: Text(note.date, textAlign: TextAlign.right),
+            child: Text(note.date, style: kListTileDateStyle),
           ),
         ],
       ),

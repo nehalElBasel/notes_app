@@ -5,6 +5,7 @@ import 'package:notes_app_new/models/note_model.dart';
 import 'package:notes_app_new/views/add_note_view.dart';
 import 'package:notes_app_new/views/edit_note_view.dart';
 import 'package:notes_app_new/views/notes_view.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -23,6 +24,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        // fontFamily: 'Poppins',
+        textTheme: GoogleFonts.poppinsTextTheme(),
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
