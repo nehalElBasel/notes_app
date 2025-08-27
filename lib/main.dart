@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const NoteApp(),
+      initialRoute: NotesView.notesViewRouteID,
       routes: {
         NotesView.notesViewRouteID: (context) => NotesView(),
         AddNoteView.addNotesViewRouteID: (context) => AddNoteView(),

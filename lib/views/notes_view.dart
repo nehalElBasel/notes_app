@@ -6,6 +6,6 @@ class NotesView extends StatelessWidget {
   static final notesViewRouteID = kNotesViewRouteID;
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(appBar: AppBar(), body: Text(""));
   }
 }
