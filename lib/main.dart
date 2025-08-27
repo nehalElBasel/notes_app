@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app_new/views/add_note_view.dart';
+import 'package:notes_app_new/views/edit_note_view.dart';
+import 'package:notes_app_new/views/notes_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,6 +34,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const NoteApp(),
+      routes: {
+        NotesView.notesViewRouteID: (context) => NotesView(),
+        AddNoteView.addNotesViewRouteID: (context) => AddNoteView(),
+        EditNoteView.editNotesViewRouteID: (context) => EditNoteView(),
+      },
     );
   }
 }
@@ -40,6 +48,6 @@ class NoteApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Text("");
   }
 }
